@@ -7,7 +7,11 @@
     <!-- Otra forma de agregar el CSS -->
     <!-- <style> -->
     <!--  Aqui se enlaza el CSS -->
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">  
+    <!-- Se impórta tipo de letra desde goole fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">  
 </head>
 <body>
     <!-- Header es el encabezado de la página -->
@@ -16,11 +20,11 @@
         <nav>
             <ul>
                 <!-- El # hace referencia a un identificador unico en la pagina -->
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#planes">Planes</a></li>
-                <li><a href="paseadores">Paseadores</a></li>
-                <li><a href="contacto">Contacto</a></li>
+                <li><a href="#inicio" class="boton">Inicio</a></li>
+                <li><a href="#servicios" class="boton">Servicios</a></li>
+                <li><a href="#planes" class="boton">Planes</a></li>
+                <li><a href="paseadores" class="boton">Paseadores</a></li>
+                <li><a href="contacto" class="boton">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -28,7 +32,7 @@
         <section id="inicio"> <!-- Aquí se hace la referencia al #inicio -->
             <h1>Huella Urbana</h1>
             <p id="eslogan">Paseos seguros y felices para tu mascota, mientras tu cumples con tu día</p>
-            <a href="#contacto">Agenda un paseo</a>
+            <a href="#contacto" class="boton">Agenda un paseo</a> <!-- Se coloca la clase boton -->
             <img src="img/principal.jpg" alt="Paseo de mascotas">
         </section>
 
@@ -49,6 +53,11 @@
                 <h3>Guardería</h3>
                 <p>Juego, descanso y cuidado mientras tu trabajas ellos se divierten</p>
             </article>
+
+        <section>
+            <!-- Para videos de youtube se copia el codigo de insersión -->
+            <iframe width="1490" height="544" src="https://www.youtube.com/embed/N6QRiwrS_CE" title="Intenta No Reír 😂 Los Gatos Y Perros Más Divertidos De Todos Los Tiempos 😹🐶 Parte 11" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
         </section id="planes">
             <article>
                 <h3>Planes Mensuales</h3>
@@ -83,6 +92,19 @@
                 <p>Estudiante de veterinaria. Ideal para mascotas grandes</p>
             </article>    
         </section>
+        <section id="contacto">
+                <h2>Contactanos</h2>
+                <p>Escribenos y agenda el primer paseo para tu mascota.</p>
+                <ul>
+                    <!-- Para correo se agrega mailto -->
+                    <li><a href="mailto:contacto@huellaurbana.co">contacto@huellaurbana.co</a></li>
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                </ul>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2026 Huella Urbana. Todos los derechos reservados.</p>
+        <p>Fotos: <a href="https://pexel.com" target="_blank">Pexel</a></p>
+    </footer>
 </body>
 </html>

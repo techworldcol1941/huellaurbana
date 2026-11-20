@@ -1,23 +1,83 @@
+/* Asi se almacenan los colores que se van a usar en la pagina */
+:root{
+    --verde: #09C846;
+    --naranja: #f68a2b;
+    --cielo: #d8d8f2;
+    --azul: #260fbc;
+    --blanco: ffffff;
+
+}
 header{
-    background-color: green;
+    /* Aquí se agrego el color con una variable */
+    background-color: var(--verde) ;
     }
+    /* Aqui se modifica la imagen de header sigiendo la ramificación */
+header img{
+        width: 300px;
+        height: 200px;
+}
+
 /* Color de fondo con código y color es para las letras */
 body{
-    background-color: #8FD4FA; 
-    color: darkblue;
+    background-color: var(--cielo); 
+    color: var(--azul);
+    margin: auto;
 }
-/* Modifica todos los parrafos */
-p{
-    font-size: 20pt; /* tamano de fuente */
+
+nav ul{
+    list-style: none;
+    text-align: right;
 }
-/* Aquí se modifica por id, este aplica para un parrafo con id slogan */
-#eslogan{
-    color: red;
-    font-size: 30pt;
+/* Aqui se coloca la lista del menú, horizontalmente */
+nav li{
+    display: inline-block;
+    margin-right: 20px; /* Esta es la distancia que se coloca entre cada texto o boton */
 }
-/* Hacer una clase, se coloco a algunos parrafos */
-.parrafo{
-    background-color: darkviolet;
+
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    /* Este código se trae de google fonts una vez se escoge la letra y antes se enlazo en head */
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+/* Se indica que las imagenes no sobrepasen el 100% de la pagina */
+img{
+    max-width: 100%;
+}
+/* centrar todo inicio */
+#inicio{
+    text-align: center;
+}
+#inicio img{
+    width: 500px;
+    height: 600px;
+    border-radius: 30px;
+}
+/* Clase para colocar boton */
+.boton{
+    display: inline-block;
+    background-color: var(--naranja);
+    color: var(--azul);
+    padding: 12px 12px 12px 12px; /* Espacio del borde del boton a las letras */
+    margin: 20px 0;
+    border-radius: 30px; /* redondea las esquinas */
+    text-decoration: none;
+}
+/* Animación para el boton, se crea evento */
+.boton:hover{
+    background-color: var(--cielo);
+    color: var(--verde);
+}
+
+h1,h2,h3{
+    color: var(--verde);
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 /* Modificar imagenes */
 img{
