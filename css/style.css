@@ -1,0 +1,31 @@
+header{
+    background-color: green;
+    }
+/* Color de fondo con código y color es para las letras */
+body{
+    background-color: #8FD4FA; 
+    color: darkblue;
+}
+/* Modifica todos los parrafos */
+p{
+    font-size: 20pt; /* tamano de fuente */
+}
+/* Aquí se modifica por id, este aplica para un parrafo con id slogan */
+#eslogan{
+    color: red;
+    font-size: 30pt;
+}
+/* Hacer una clase, se coloco a algunos parrafos */
+.parrafo{
+    background-color: darkviolet;
+}
+/* Modificar imagenes */
+img{
+    width: 300px;
+    height: 300px;
+}
+/* Se pueden anidar varias estructuras */
+#servicios article img{
+    width: 200px;
+    height: 200px;
+}
